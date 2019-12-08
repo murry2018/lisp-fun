@@ -8,13 +8,12 @@
          (return-from REPL (cadr input)))
        (format t ";=> ~s~%" (eval input))))
 
-#| result
->>> (print 'hi)
-
-HI ;=> HI
->>> (+ 1 2)
-;=> 3
->>> (exit 'bye)
-
-'BYE
-|#
+;;; Example:
+;; >>> (print 'hi)
+;;
+;; HI ;=> HI
+;; >>> (+ 1 2)
+;; ;=> 3
+;; >>> (exit 'bye)
+;;
+;; 'BYE

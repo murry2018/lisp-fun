@@ -15,9 +15,9 @@
     (setf (svref v i) (svref v j)
           (svref v j) tmp)))
 
-#| example:
-CL-USER> (selectionsort #(1 7 9 4 0 8 2 1) #'<)
-#(0 1 1 2 4 7 8 9)
-CL-USER> (selectionsort #(1 7 9 4 0 8 2 1) #'>)
-#(9 8 7 4 2 1 1 0)
-|#
+;;; Example:
+;; CL-USER> (selectionsort #(1 7 9 4 0 8 2 1) #'<)
+;; #(0 1 1 2 4 7 8 9)
+;; CL-USER> (selectionsort #(1 7 9 4 0 8 2 1) #'>)
+;; #(9 8 7 4 2 1 1 0)
+

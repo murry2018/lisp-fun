@@ -13,19 +13,18 @@
   (if (< s e) (star-uptrape s e)
       (star-downtrape s e)))
 
-#| example:
-CL-USER> (progn (star-trape 1 4) (star-trape 3 1))
-*
-**
-***
-****
-***
-**
-*
-CL-USER> (progn (star-trape 7 5) (star-trape 6 7))
-*******
-******
-*****
-******
-*******
-|#
+;;; example:
+;; CL-USER> (progn (star-trape 1 4) (star-trape 3 1))
+;; *
+;; **
+;; ***
+;; ****
+;; ***
+;; **
+;; *
+;; CL-USER> (progn (star-trape 7 5) (star-trape 6 7))
+;; *******
+;; ******
+;; *****
+;; ******
+;; *******
