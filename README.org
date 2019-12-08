@@ -3,3 +3,17 @@
 *Just for fun, Lisp*
 
 Common lisp doodle collection
+
+** Contents
+
+*** Recursion/High-order Function
+
+- [[src/selectionsort-recur.lisp][SelectionSort-Recur]] :: Selection sort implementation (cf. [[src/selectionsort-loop.lisp][SelectionSort-Loop]])
+- [[src/transpose-hof.lisp][Transpose-HOF]] :: transpose a list of list (cf. [[src/transpose-loop.lisp][Transpose-Loop]])
+
+*** Loop
+
+- [[src/repl.lisp][REPL]] :: apply a simple loop
+- [[src/selectionsort-loop.lisp][SelectionSort-Loop]] :: selection sort implementation (cf. [[src/selectionsort-recur.lisp][SelectionSort-Recur]])
+- [[src/startrape.lisp][StarTrape]] :: draw a trapezoid with star
+- [[src/transpose-loop.lisp][Transpose-Loop]] :: transpose a list of list (cf. [[src/transpose-hof.lisp][Transpose-HOF]])
