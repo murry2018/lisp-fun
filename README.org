@@ -17,3 +17,5 @@ Common lisp doodle collection
 - [[src/selectionsort-loop.lisp][SelectionSort-Loop]] :: selection sort implementation (cf. [[src/selectionsort-recur.lisp][SelectionSort-Recur]])
 - [[src/startrape.lisp][StarTrape]] :: draw a trapezoid with star
 - [[src/transpose-loop.lisp][Transpose-Loop]] :: transpose a list of list (cf. [[src/transpose-hof.lisp][Transpose-HOF]])
+- [[src/mult-table.lisp][Mult-Table]] :: 9x9 multiplication table (cf. [[src/mult-table-advanced.lisp][Mult-Table Advanced]])
+- [[src/mult-table-advanced.lisp][Mult-Table Advanced]] :: NxN multiplication table (cf. [[src/mult-table.lisp][Mult-Table]])
