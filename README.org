@@ -15,3 +15,4 @@ Common lisp doodle collection
 - [[src/mult-table.lisp][Mult-Table]] :: 9x9 multiplication table (cf. [[src/mult-table-advanced.lisp][Mult-Table Advanced]])
 - [[src/mult-table-advanced.lisp][Mult-Table Advanced]] :: NxN multiplication table (cf. [[src/mult-table.lisp][Mult-Table]])
 - [[src/gauss-elimination.lisp][Gauss-Elimination]] :: Gaussian elimination(but not gauss-jordan)
+- [[src/gauss-elimination-log.lisp][Gauss-Elimination-Log]] :: This helps our linear algebra homework(cf. [[src/gauss-elimination.lisp][Gauss-Elimination]])
