@@ -11,9 +11,7 @@
           (select v (1+ i) < i)
           (select v (1+ i) < g))))
 (defun swap (v i j)
-  (let ((tmp (svref v i)))
-    (setf (svref v i) (svref v j)
-          (svref v j) tmp)))
+  (rotatef (svref v i) (svref v j)))
 
 ;;; Example:
 ;; CL-USER> (selectionsort #(1 7 9 4 0 8 2 1) #'<)

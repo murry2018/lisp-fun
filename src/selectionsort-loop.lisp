@@ -1,7 +1,5 @@
 (defun swap (v i j)
-  (let ((tmp (svref v i)))
-    (setf (svref v i) (svref v j)
-          (svref v j) tmp)))
+  (rotatef (svref v i) (svref v j)))
 (defun selectionsort (v <)
   (loop for i below (length v)
      as select =
