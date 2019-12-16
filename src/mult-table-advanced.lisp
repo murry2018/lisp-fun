@@ -1,26 +1,13 @@
-(defun row-format (fact-digit prod-digit)
-  (let ((fact-spec (write-to-string fact-digit))
-        (prod-spec (write-to-string prod-digit)))
-    (concatenate 'string
-                 "|~{ ~" fact-spec "dx~" fact-spec
-                 "d=~" prod-spec  "d |~}~%")))
-
-(defun mult-table-row (min-level max-level column mult
-                       fact-digit prod-digit)
-  (format t (row-format fact-digit prod-digit)
-          (loop repeat column
-             for level from min-level to max-level
-             append `(,level ,mult ,(* level mult)))))
-
-(defun calc-digit (n)
-  (1+ (truncate (/ (log n) (log 10)))))
-
-(defun square (n) 
-  (* n n))
+(defun mult-table-row (min-level max-level column mult fact-digit prod-digit)
+  (loop repeat column
+     for level from min-level to max-level do
+       (format t "| ~vdx~vd=~vd "
+               fact-digit level fact-digit mult prod-digit (* level mult))
+     finally (format t "|~%")))
 
 (defun mult-table (&key (max-level 9) (column 3))
-  (let ((fact-digit (calc-digit max-level))
-        (prod-digit (calc-digit (square max-level))))
+  (let ((fact-digit (floor (1+ (log max-level 10))))
+        (prod-digit (floor (1+ (log (* max-level max-level) 10)))))
     (loop for level from 1 to max-level by column do
          (loop for mult from 1 to max-level do
               (mult-table-row level max-level column
